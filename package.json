@@ -1,0 +1,45 @@
+{
+  "name": "typeof-util",
+  "description": "Acts as an enhancement to the typeof operator by adding support for returning 'array' and 'null'",
+  "version": "0.0.1",
+  "homepage": "https://github.com/codybonney/typeof-util",
+  "author": "Cody Bonney (https://github.com/codybonney)",
+  "contributors": [],
+  "repository": "https://github.com/codybonney/typeof-util",
+  "bugs": {
+    "url": "https://github.com/codybonney/typeof-util/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "ava": {
+    "cache": true,
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "ava": "^2.4.0"
+  },
+  "keywords": [
+    "typeof",
+    "type",
+    "types",
+    "function",
+    "module",
+    "util",
+    "utilities",
+    "helper"
+  ]
+}
