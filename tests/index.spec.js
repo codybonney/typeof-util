@@ -1,5 +1,5 @@
 import test from 'ava';
-import typeOf from './';
+import typeOf from '../src';
 
 test('returns "array" when given an array value', t => {
     t.is('array', typeOf([]));

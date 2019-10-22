@@ -11,9 +11,9 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "dist/index.js"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -24,13 +24,18 @@
     ]
   },
   "scripts": {
+    "prepare": "npm run build",
+    "build": "babel src -d dist",
     "test": "ava"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/register": "^7.6.2",
-    "ava": "^2.4.0"
+    "ava": "^2.4.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1"
   },
   "keywords": [
     "typeof",
