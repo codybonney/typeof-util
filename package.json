@@ -18,8 +18,12 @@
     "node": ">=0.10.0"
   },
   "ava": {
-    "cache": true,
+    "cache": false,
+    "files": [
+      "tests/*.spec.js"
+    ],
     "require": [
+      "./tests/setup.js",
       "@babel/register"
     ]
   },
