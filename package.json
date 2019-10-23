@@ -23,8 +23,7 @@
       "tests/*.spec.js"
     ],
     "require": [
-      "./tests/setup.js",
-      "@babel/register"
+      "./tests/setup.js"
     ]
   },
   "scripts": {
