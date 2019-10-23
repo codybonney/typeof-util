@@ -1,7 +1,7 @@
 {
   "name": "typeof-util",
   "description": "Acts as an enhancement to the typeof operator by adding support for returning 'array' and 'null'",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/codybonney/typeof-util",
   "author": "Cody Bonney (https://github.com/codybonney)",
   "contributors": [],
@@ -11,34 +11,27 @@
   },
   "license": "MIT",
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "dist/index.d.js"
   ],
   "main": "dist/index.js",
   "engines": {
     "node": ">=0.10.0"
   },
-  "ava": {
-    "cache": false,
-    "files": [
-      "tests/*.spec.js"
-    ],
-    "require": [
-      "./tests/setup.js"
-    ]
-  },
   "scripts": {
     "prepare": "npm run build",
-    "build": "babel src -d dist",
-    "test": "ava"
+    "build": "tsc",
+    "test": "jasmine-ts tsconfig.json --config=./jasmine.json"
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/register": "^7.6.2",
-    "ava": "^2.4.0",
-    "babel-plugin-transform-es2015-modules-umd": "^6.24.1"
+    "@types/jasmine": "^3.4.4",
+    "@types/node": "^12.11.1",
+    "jasmine": "^3.5.0",
+    "jasmine-core": "^3.5.0",
+    "jasmine-ts": "^0.3.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
   },
   "keywords": [
     "typeof",

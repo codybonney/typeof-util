@@ -4,7 +4,7 @@
 [![npm version](http://img.shields.io/npm/v/typeof-util.svg?style=flat)](https://npmjs.org/package/typeof-util "View this project on npm")
 
 ### Description:
-A simple JavaScript utility function that acts as an enhanced version of the `typeof` operator by adding support for returning `"array"` and `"null"`
+A simple TypeScript utility function that acts as an enhanced version of the `typeof` operator by adding support for returning `"array"` and `"null"`. JavaScript UMD and TypeScript declaration file will be generated when building the package.
 
 ### Installation:
 ```
