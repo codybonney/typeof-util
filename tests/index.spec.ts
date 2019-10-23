@@ -9,7 +9,13 @@ describe("typeOf", () => {
 
     it("should return 'object' for an object value", () => {
         expect(typeOf({})).toBe('object');
+        expect(typeOf(new Object())).toBe('object');
         expect(typeOf({'foo': 'bar'})).toBe('object');
+
+        // invalid function should be treated as an object
+        const noCall = () => {};
+        noCall.call = undefined;
+        expect(typeOf(noCall)).toBe('object');
     });
 
     it("should return 'function' for a function value", () => {
