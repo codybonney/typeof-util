@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/codybonney/typeof-util/issues"
   },
-  "license": "MIT",
+  "license": "Apache",
   "files": [
     "dist/index.js",
     "dist/index.d.js"
@@ -38,6 +38,8 @@
     "typescript": "^3.6.4"
   },
   "keywords": [
+    "javascript",
+    "typescript",
     "typeof",
     "type",
     "types",
