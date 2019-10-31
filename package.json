@@ -1,7 +1,7 @@
 {
   "name": "typeof-util",
   "description": "Simple utility function that acts as an enhanced version of the typeof operator by adding support for returning \"array\" and \"null\". ",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "homepage": "https://github.com/codybonney/typeof-util",
   "author": "Cody Bonney (https://github.com/codybonney)",
   "contributors": [],
@@ -12,8 +12,7 @@
   "license": "Apache",
   "files": [
     "dist/index.js",
-    "dist/index.d.ts",
-    "dist/index.js.map"
+    "dist/index.d.ts"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
